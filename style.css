@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'AmericanCaptain';
+    src: url('AmericanCaptain-MdEY.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ChakraPetch-Regular';
+    src: url('ChakraPetch-Regular.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'ChakraPetch-Regular', sans-serif;
+    height: 100%;
+}
+
+body {
+    background-image: url('background.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+ a:link, 
+ a:visited, 
+ a:hover, 
+ a:active {
+    color: white; /* Same color as normal text */
+    text-decoration: none; /* No underline */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 200px;
+    margin: 0;
+    font-family: 'AmericanCaptain', sans-serif;
+    line-height: normal;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body, html {
+        height: auto;
+    }
+
+    body {
+        background-size: auto 100%; /* Scale image to cover the height */
+        background-position: center top;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content {
+        padding: 10px; /* Add padding to prevent text cutoff */
+    }
+
+    .content h1 {
+        font-size: 50px; /* Reduce font size for mobile */
+        word-wrap: break-word; /* Break words to prevent horizontal scrolling */
+    }
+
+    .content p {
+        font-size: 16px; /* Adjust font size for mobile readability */
+    }
+}
