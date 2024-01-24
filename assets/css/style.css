@@ -479,7 +479,9 @@ img {
   }
 }
 
-
+.contract-address {
+    overflow-wrap: break-word;
+}
 
 .count-area {
     padding: 100px 0px;
