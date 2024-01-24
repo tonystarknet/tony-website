@@ -198,7 +198,7 @@ img {
     top: -60px;
     left: 0;
     animation: goDown 0.5s ease-in-out forwards;
-    background-color: #0e0023;
+    background-color: rgba(26, 10, 10, 0.93);
     box-shadow: 0px 0px 15px #11181a;
     opacity: 0.93;
 }
@@ -483,7 +483,7 @@ img {
 
 .count-area {
     padding: 100px 0px;
-    background-color: rgba(89, 0, 255, 0.15);
+    background-color: rgba(100, 0, 10, 0.10);
 }
 .count-area .container {
     max-width: 960px;
